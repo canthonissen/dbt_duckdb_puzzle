@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "AIRBNB"."main"."seed_full_moon_dates" ("full_moon_date" date)
+  ;
+    -- dbt seed --
+    
+          COPY "AIRBNB"."main"."seed_full_moon_dates" FROM 'C:\Users\Use\OneDrive\Development\dbt-course\learn_duckdb\seeds\seed_full_moon_dates.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

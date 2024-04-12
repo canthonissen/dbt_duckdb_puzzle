@@ -1,0 +1,16 @@
+
+  
+  create view "AIRBNB"."main"."src_hosts__dbt_tmp" as (
+    WITH raw_hosts AS (
+    SELECT * FROM "AIRBNB"."raw"."raw_hosts"
+)
+
+SELECT
+    id AS host_id,
+    name AS host_name,
+    is_superhost,
+    created_at,
+    updated_at
+FROM
+    raw_hosts
+  );
